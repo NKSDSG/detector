@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Dec 23 15:39:50 2021
+# Process ID: 69692
+# Current directory: D:/shixi/fpga_prj/vivado/detector/detector.runs/ila_3_synth_1
+# Command line: vivado.exe -log ila_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_3.tcl
+# Log file: D:/shixi/fpga_prj/vivado/detector/detector.runs/ila_3_synth_1/ila_3.vds
+# Journal file: D:/shixi/fpga_prj/vivado/detector/detector.runs/ila_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_3.tcl -notrace

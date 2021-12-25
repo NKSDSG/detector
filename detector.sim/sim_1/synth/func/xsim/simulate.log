@@ -1,0 +1,7 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: Too many words specified in data file D:/shixi/matlab/FPGA/adc_data.txt
+WARNING: Too many words specified in data file D:/shixi/matlab/FPGA/adc_otr.txt
+WARNING: Too many words specified in data file D:/shixi/matlab/FPGA/adc_data.txt
+WARNING: Too many words specified in data file D:/shixi/matlab/FPGA/adc_otr.txt
+$stop called at time : 2521654616 ps : File "D:/shixi/fpga_prj/vivado/detector/detector.srcs/sim_1/imports/new/tb_topmodule.sv" Line 61

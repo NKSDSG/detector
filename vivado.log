@@ -1,0 +1,451 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Dec 24 15:53:53 2021
+# Process ID: 67800
+# Current directory: D:/shixi/fpga_prj/vivado/detector
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent69744 D:\shixi\fpga_prj\vivado\detector\detector.xpr
+# Log file: D:/shixi/fpga_prj/vivado/detector/vivado.log
+# Journal file: D:/shixi/fpga_prj/vivado/detector\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/shixi/fpga_prj/vivado/detector/detector.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/int_trig.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 978.457 ; gain = 266.867
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:00:45 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:00:45 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1159.445 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855856
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_freq_top/ila3"}]]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2470.824 ; gain = 0.000
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 24 16:07:55 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:08:37 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:08:37 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:12:53 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:12:53 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2478.258 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855856
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_freq_top/ila3"}]]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2493.078 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2021-Dec-24 16:18:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2021-Dec-24 16:18:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/shixi/fpga_prj/vivado/detector/detector.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+close_hw_manager
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE6_WIDTH {2}] [get_ips ila_2]
+generate_target all [get_files  D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_2'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_2'...
+catch { config_ip_cache -export [get_ips -all ila_2] }
+export_ip_user_files -of_objects [get_files D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2.xci] -no_script -sync -force -quiet
+reset_run ila_2_synth_1
+launch_runs -jobs 2 ila_2_synth_1
+[Fri Dec 24 16:27:07 2021] Launched ila_2_synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/ila_2_synth_1/runme.log
+export_simulation -of_objects [get_files D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2.xci] -directory D:/shixi/fpga_prj/vivado/detector/detector.ip_user_files/sim_scripts -ip_user_files_dir D:/shixi/fpga_prj/vivado/detector/detector.ip_user_files -ipstatic_source_dir D:/shixi/fpga_prj/vivado/detector/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/modelsim} {questa=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/questa} {riviera=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/riviera} {activehdl=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:42:19 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:42:19 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:43:03 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:43:03 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2548.238 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855856
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+WARNING: [Labtools 27-1972] Mismatch between the design programmed into the device xc7a100t (JTAG device index = 0) and the probes file(s) D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx.
+ The core at location uuid_BB66D5738BDF5127901D414ED41F94E3 has different widths for ILA input port 6. Port width in the device core is 1, but port width in the probes file is 2.
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_freq_top/ila3"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes no_external -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes no_signal -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2021-Dec-24 16:48:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2021-Dec-24 16:48:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/shixi/fpga_prj/vivado/detector/detector.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:51:06 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:51:06 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2687.598 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855856
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_freq_top/ila3"}]]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2701.395 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2021-Dec-24 16:55:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2021-Dec-24 16:55:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/shixi/fpga_prj/vivado/detector/detector.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2021-Dec-24 16:55:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2021-Dec-24 16:55:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/shixi/fpga_prj/vivado/detector/detector.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+close_hw_manager
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE5_WIDTH {2}] [get_ips ila_2]
+generate_target all [get_files  D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_2'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_2'...
+catch { config_ip_cache -export [get_ips -all ila_2] }
+export_ip_user_files -of_objects [get_files D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2.xci] -no_script -sync -force -quiet
+reset_run ila_2_synth_1
+launch_runs -jobs 2 ila_2_synth_1
+[Fri Dec 24 16:57:03 2021] Launched ila_2_synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/ila_2_synth_1/runme.log
+export_simulation -of_objects [get_files D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2.xci] -directory D:/shixi/fpga_prj/vivado/detector/detector.ip_user_files/sim_scripts -ip_user_files_dir D:/shixi/fpga_prj/vivado/detector/detector.ip_user_files -ipstatic_source_dir D:/shixi/fpga_prj/vivado/detector/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/modelsim} {questa=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/questa} {riviera=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/riviera} {activehdl=D:/shixi/fpga_prj/vivado/detector/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 16:59:01 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:59:01 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Fri Dec 24 16:59:27 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 16:59:27 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 17:06:09 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2898.953 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855856
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+WARNING: [Labtools 27-1972] Mismatch between the design programmed into the device xc7a100t (JTAG device index = 0) and the probes file(s) D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx.
+ The core at location uuid_BB66D5738BDF5127901D414ED41F94E3 has different widths for ILA input port 5. Port width in the device core is 1, but port width in the probes file is 2.
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_freq_top/ila3"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Dec-24 17:09:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Dec-24 17:09:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/shixi/fpga_prj/vivado/detector/detector.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq12'u2900 [get_hw_probes u_data_process/u_ext_pro/ADC2_Data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+set_property TRIGGER_COMPARE_VALUE lteq12'u2900 [get_hw_probes u_data_process/u_ext_pro/ADC2_Data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+set_property TRIGGER_COMPARE_VALUE lteq12'u2500 [get_hw_probes u_data_process/u_ext_pro/ADC2_Data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Dec-24 17:09:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Dec-24 17:09:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/shixi/fpga_prj/vivado/detector/detector.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 24 17:14:08 2021] Launched synth_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/runme.log
+[Fri Dec 24 17:14:08 2021] Launched impl_1...
+Run output will be captured here: D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2964.688 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855856
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"ila2"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_data_process/u_ext_pro/u0_ila"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_freq_top/ila3"}]]
+display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2978.504 ; gain = 0.000
+set_property PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/shixi/fpga_prj/vivado/detector/detector.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2978.504 ; gain = 0.000
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/shixi/fpga_prj/vivado/detector/detector.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 24 17:19:48 2021...

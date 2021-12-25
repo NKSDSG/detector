@@ -1,0 +1,21 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/shixi/fpga_prj/vivado/detector/detector.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sim_1/imports/new/tb_topmodule.sv,1638260162,systemVerilog,,,,tb_topmodule,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadModule.v,1637833281,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadTEST.v,,AD9220_ReadModule,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadTEST.v,1637747773,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/TriggerModule.v,,AD9220_ReadTEST,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/TriggerModule.v,1637747807,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/data_process.v,,TriggerModule,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/data_process.v,1638264720,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/fifo_rd.v,,data_process,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/fifo_rd.v,1637720838,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/fifo_wr.v,,fifo_rd,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/fifo_wr.v,1637747749,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/pre_trigger.v,,fifo_wr,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/pre_trigger.v,1637747748,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/simple_trigger.v,,pre_trigger,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/simple_trigger.v,1637747748,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v,,simple_trigger,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v,1638259762,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_uart_send.v,,top_module,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_uart_send.v,1638263978,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/uart_send.v,,top_uart_send,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/uart_send.v,1638259770,verilog,,,,uart_send,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1637746642,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_0/sim/ila_0.v,,clk_wiz_0,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1637746642,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1637403632,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadModule.v,,fifo_generator_0,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_0/sim/ila_0.v,1637982640,verilog,,D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,,ila_0,,,../../../../detector.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -1,0 +1,753 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Dec 24 17:14:10 2021
+# Process ID: 78980
+# Current directory: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/top_module.vds
+# Journal file: D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+Command: synth_design -top top_module -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 80188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1023.887 ; gain = 234.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:23]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:38]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:39]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:40]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:41]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:42]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:43]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:44]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:45]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:46]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_recv' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/uart_recv.v:23]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter UART_BPS bound to: 9600 - type: integer 
+	Parameter BPS_CNT bound to: 5208 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_recv' (2#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/uart_recv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Triggermode_Select' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/Triggermode_Select.v:24]
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+INFO: [Synth 8-6155] done synthesizing module 'Triggermode_Select' (3#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/Triggermode_Select.v:24]
+INFO: [Synth 8-6157] synthesizing module 'data_trigger' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/data_trigger.v:23]
+INFO: [Synth 8-6157] synthesizing module 'internal_trigger' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_trigger.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'internal_trigger' (4#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_trigger.v:4]
+INFO: [Synth 8-6157] synthesizing module 'external_trigger' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_trigger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'external_trigger' (5#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_trigger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_trigger' (6#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/data_trigger.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_process' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/data_process.v:24]
+INFO: [Synth 8-6157] synthesizing module 'internal_process' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:24]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:57]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:58]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:59]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:60]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'internal_process' (7#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/internal_process.v:24]
+INFO: [Synth 8-6157] synthesizing module 'external_process' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_process.v:24]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_process.v:126]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (8#1) [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (2) of port connection 'probe0' does not match port width (1) of module 'ila_0' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_process.v:129]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u0_ila'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_process.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'external_process' (9#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/new/external_process.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'data_process' (10#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/data_process.v:24]
+INFO: [Synth 8-6157] synthesizing module 'top_uart_send' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_uart_send.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_send' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/uart_send.v:23]
+	Parameter CLK_FREQ bound to: 65000000 - type: integer 
+	Parameter UART_BPS bound to: 9600 - type: integer 
+	Parameter BPS_CNT bound to: 6770 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_send' (11#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/uart_send.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_uart_send' (12#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_uart_send.v:23]
+INFO: [Synth 8-6157] synthesizing module 'freq_top' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:21]
+INFO: [Synth 8-226] default block is never used [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:46]
+INFO: [Synth 8-226] default block is never used [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:68]
+INFO: [Synth 8-226] default block is never used [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:90]
+INFO: [Synth 8-226] default block is never used [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:112]
+INFO: [Synth 8-226] default block is never used [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:134]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:155]
+INFO: [Synth 8-6157] synthesizing module 'ila_3' [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/ila_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_3' (13#1) [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/ila_3_stub.v:6]
+WARNING: [Synth 8-689] width (20) of port connection 'probe0' does not match port width (4) of module 'ila_3' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:159]
+WARNING: [Synth 8-689] width (20) of port connection 'probe1' does not match port width (4) of module 'ila_3' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:160]
+WARNING: [Synth 8-689] width (20) of port connection 'probe2' does not match port width (4) of module 'ila_3' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:161]
+WARNING: [Synth 8-689] width (20) of port connection 'probe3' does not match port width (4) of module 'ila_3' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:162]
+WARNING: [Synth 8-689] width (20) of port connection 'probe4' does not match port width (4) of module 'ila_3' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:163]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/controller.v:21]
+	Parameter IDLE bound to: 5'b00000 
+	Parameter OVERRANGE bound to: 5'b00001 
+	Parameter COUNT_1 bound to: 5'b00010 
+	Parameter ONE_2_TEN bound to: 5'b00011 
+	Parameter COUNT_10 bound to: 5'b00100 
+	Parameter TEN_2_HUN bound to: 5'b00101 
+	Parameter COUNT_100 bound to: 5'b00110 
+	Parameter HUN_2_THO bound to: 5'b00111 
+	Parameter COUNT_1000 bound to: 5'b01000 
+	Parameter DONE_1 bound to: 5'b01001 
+	Parameter DONE_10 bound to: 5'b01010 
+	Parameter DONE_100 bound to: 5'b01011 
+	Parameter DONE_1000 bound to: 5'b01100 
+	Parameter LATCH_1 bound to: 5'b01101 
+	Parameter LATCH_10 bound to: 5'b01110 
+	Parameter LATCH_100 bound to: 5'b01111 
+	Parameter LATCH_1000 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'controller' (14#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'data_path' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/data_path.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/clk_div.v:21]
+INFO: [Synth 8-226] default block is never used [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/clk_div.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (15#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/clk_div.v:21]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/counter.v:21]
+INFO: [Synth 8-6157] synthesizing module 'counter_10' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/counter_10.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'counter_10' (16#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/counter_10.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (17#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/counter.v:21]
+INFO: [Synth 8-6157] synthesizing module 'latch_freq' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/latch_freq.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'latch_freq' (18#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/latch_freq.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'data_path' (19#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/data_path.v:22]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila3'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'freq_top' (20#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/fre_counter/freq_top.v:21]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:232]
+INFO: [Synth 8-6157] synthesizing module 'ila_2' [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_2' (21#1) [D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/.Xil/Vivado-78980-LAPTOP-HLA83F6G/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AD9220_ReadTEST' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadTEST.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AD9220_ReadModule' [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadModule.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AD9220_ReadModule' (22#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadModule.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AD9220_ReadTEST' (23#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/AD9220_ReadTEST.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_freq_top'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:219]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila2'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:232]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'send_packdata'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:205]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_data_trigger'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:127]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_data_process'. This will prevent further optimization [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (24#1) [D:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/imports/new/top_module.v:23]
+WARNING: [Synth 8-3331] design AD9220_ReadModule has unconnected port sys_clk
+WARNING: [Synth 8-3331] design internal_process has unconnected port trig_mode_sel[1]
+WARNING: [Synth 8-3331] design internal_process has unconnected port trig_mode_sel[0]
+WARNING: [Synth 8-3331] design data_process has unconnected port sys_clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1099.539 ; gain = 310.430
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1099.539 ; gain = 310.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1099.539 ; gain = 310.430
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1099.539 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll_260m'
+Finished Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll_260m'
+Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_data_process/u_ext_pro/u0_ila'
+Finished Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_data_process/u_ext_pro/u0_ila'
+Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2/ila_2_in_context.xdc] for cell 'ila2'
+Finished Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_2/ila_2/ila_2_in_context.xdc] for cell 'ila2'
+Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_3/ila_3/ila_3_in_context.xdc] for cell 'u_freq_top/ila3'
+Finished Parsing XDC File [d:/shixi/fpga_prj/vivado/detector/detector.srcs/sources_1/ip/ila_3/ila_3/ila_3_in_context.xdc] for cell 'u_freq_top/ila3'
+Parsing XDC File [D:/shixi/fpga_prj/vivado/detector/detector.srcs/constrs_1/imports/new/adc.xdc]
+Finished Parsing XDC File [D:/shixi/fpga_prj/vivado/detector/detector.srcs/constrs_1/imports/new/adc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/shixi/fpga_prj/vivado/detector/detector.srcs/constrs_1/imports/new/adc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1214.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1214.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1214.043 ; gain = 424.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1214.043 ; gain = 424.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for pll_260m. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_data_process/u_ext_pro/u0_ila. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_freq_top/ila3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1214.043 ; gain = 424.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Triggermode_Select'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_process'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'external_process'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                               00 |                              000
+                      S1 |                               01 |                              001
+                      S2 |                               10 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Triggermode_Select'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'internal_process', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'external_process', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00000 |                            00000
+                 COUNT_1 |                            00001 |                            00010
+               ONE_2_TEN |                            00010 |                            00011
+                COUNT_10 |                            00011 |                            00100
+               TEN_2_HUN |                            00100 |                            00101
+               COUNT_100 |                            00101 |                            00110
+               HUN_2_THO |                            00110 |                            00111
+              COUNT_1000 |                            00111 |                            01000
+               OVERRANGE |                            01000 |                            00001
+               DONE_1000 |                            01001 |                            01100
+              LATCH_1000 |                            01010 |                            10000
+                DONE_100 |                            01011 |                            01011
+               LATCH_100 |                            01100 |                            01111
+                 DONE_10 |                            01101 |                            01010
+                LATCH_10 |                            01110 |                            01110
+                  DONE_1 |                            01111 |                            01001
+                 LATCH_1 |                            10000 |                            01101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1214.043 ; gain = 424.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 9     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               28 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 10    
+	                8 Bit    Registers := 7     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 19    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     27 Bit        Muxes := 6     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 7     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 15    
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 2     
+	  17 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 18    
+	   3 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 44    
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 12    
+	  12 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_recv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module Triggermode_Select 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module internal_trigger 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module external_trigger 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module internal_process 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module external_process 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module data_process 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_send 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 1     
+Module top_uart_send 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  17 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	  18 Input      2 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 8     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module counter_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module latch_freq 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
+Module freq_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
+Module AD9220_ReadModule 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP freq1, operation Mode is: A*(B:0x3e8).
+DSP Report: operator freq1 is absorbed into DSP freq1.
+DSP Report: Generating DSP freq, operation Mode is: C+A*(B:0x2710).
+DSP Report: operator freq is absorbed into DSP freq.
+DSP Report: operator freq0 is absorbed into DSP freq.
+DSP Report: Generating DSP freq, operation Mode is: PCIN+A*(B:0x64).
+DSP Report: operator freq is absorbed into DSP freq.
+DSP Report: operator freq2 is absorbed into DSP freq.
+WARNING: [Synth 8-3331] design data_process has unconnected port sys_clk
+INFO: [Synth 8-3886] merging instance 'recv_trig_mode/clk_cnt_reg[14]' (FDC) to 'recv_trig_mode/clk_cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'recv_trig_mode/clk_cnt_reg[15]' (FDC) to 'recv_trig_mode/clk_cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recv_trig_mode/clk_cnt_reg[13] )
+INFO: [Synth 8-3886] merging instance 'u_data_trigger/u_int_trigger/no_signal_time_reg[27]' (FDC) to 'u_data_trigger/u_ext_trigger/no_external_time_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_data_trigger/\u_ext_trigger/no_external_time_reg[27] )
+INFO: [Synth 8-3886] merging instance 'send_packdata/u_send/clk_cnt_reg[14]' (FDC) to 'send_packdata/u_send/clk_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'send_packdata/u_send/clk_cnt_reg[15]' (FDC) to 'send_packdata/u_send/clk_cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (send_packdata/\u_send/clk_cnt_reg[13] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1214.043 ; gain = 424.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|freq_top    | A*(B:0x3e8)     | 20     | 10     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freq_top    | C+A*(B:0x2710)  | 20     | 14     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|freq_top    | PCIN+A*(B:0x64) | 20     | 7      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1235.160 ; gain = 446.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1238.387 ; gain = 449.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1259.594 ; gain = 470.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |ila_3         |         1|
+|3     |clk_wiz_0     |         1|
+|4     |ila_2         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |ila_0     |     1|
+|3     |ila_2     |     1|
+|4     |ila_3     |     1|
+|5     |BUFG      |     1|
+|6     |CARRY4    |   130|
+|7     |DSP48E1   |     2|
+|8     |DSP48E1_1 |     1|
+|9     |LUT1      |    92|
+|10    |LUT2      |   277|
+|11    |LUT3      |    44|
+|12    |LUT4      |   224|
+|13    |LUT5      |   246|
+|14    |LUT6      |   132|
+|15    |MUXF7     |     2|
+|16    |FDCE      |   678|
+|17    |FDPE      |     3|
+|18    |FDRE      |    20|
+|19    |IBUF      |    29|
+|20    |OBUF      |     3|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------+------+
+|      |Instance             |Module              |Cells |
++------+---------------------+--------------------+------+
+|1     |top                  |                    |  1888|
+|2     |  u_data_trigger     |data_trigger        |   414|
+|3     |    u_ext_trigger    |external_trigger    |   207|
+|4     |    u_int_trigger    |internal_trigger    |   207|
+|5     |  u_data_process     |data_process        |   555|
+|6     |    u_ext_pro        |external_process    |   153|
+|7     |    u_int_pro        |internal_process    |   402|
+|8     |  send_packdata      |top_uart_send       |   137|
+|9     |    u_send           |uart_send           |    80|
+|10    |  u_freq_top         |freq_top            |   601|
+|11    |    u_controller     |controller          |    21|
+|12    |    u_data_path      |data_path           |   406|
+|13    |      u_clk_div      |clk_div             |   330|
+|14    |      u_counter      |counter             |    56|
+|15    |        u_counter_q0 |counter_10          |    11|
+|16    |        u_counter_q1 |counter_10_1        |    11|
+|17    |        u_counter_q2 |counter_10_2        |    11|
+|18    |        u_counter_q3 |counter_10_3        |    11|
+|19    |        u_counter_q4 |counter_10_4        |    10|
+|20    |      u_latch_freq   |latch_freq          |    20|
+|21    |  recv_trig_mode     |uart_recv           |    97|
+|22    |  trig_sel           |Triggermode_Select  |    18|
+|23    |  u_adc_read         |AD9220_ReadTEST     |    26|
+|24    |    ADC1_ReadModule  |AD9220_ReadModule   |    13|
+|25    |    ADC2_ReadModule  |AD9220_ReadModule_0 |    13|
++------+---------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1264.375 ; gain = 360.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1264.375 ; gain = 475.266
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1276.426 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1279.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+103 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.430 ; gain = 781.602
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1279.430 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/shixi/fpga_prj/vivado/detector/detector.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 24 17:14:54 2021...
